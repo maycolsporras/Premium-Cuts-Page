@@ -61,7 +61,7 @@ body{
       rgba(0, 0, 0, 0) 5%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url('./assets/image-hero.jpg');
+    url('./image-hero.jpg');
 
   background-size: cover;
   background-position: center;
