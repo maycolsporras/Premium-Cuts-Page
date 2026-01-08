@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Cuts</title>
+    <meta name="description" content="Premium Cuts is your go-to destination for high-quality meats and gourmet cuts. Explore our selection of premium beef, pork, poultry, and specialty meats, all sourced from trusted farms and prepared with care. Whether you're a home cook or a professional chef, Premium Cuts offers the finest products to elevate your culinary creations.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <button id="menuBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+        <h1>Premium Cuts</h1>
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+        </button>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <button id="closeBtn">✕</button>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </aside>
+
+    <main>  
+        <section class="hero">
+            <p style="color: var(--golden-color);">Limited disponibility</p>
+            <h2>The Perfect Cut</h2>
+            <h2>Every Time</h2>
+            <p>Experience the finest quality meats, expertly selected and prepared to perfection.</p>
+            <a href="#meat-categories"><button>Shop Now</button></a>
+        </section>
+        <section id="meat-categories" class="meat-categories">
+            <header class="categories-header">
+                <h2>Categories</h2>
+                <div class="categories-buttons">
+                    <button class="filter-btn" value="">ALL</button>
+                    <button class="filter-btn" value="steak">STEAKS</button>
+                    <button class="filter-btn" value="ribs">RIBS</button>
+                    <button class="filter-btn" value="wagyu">WAGYU</button>
+                    <button class="filter-btn" value="pork">PORK</button>
+                    <button class="filter-btn" value="bundles">BUNDLES</button>
+                </div>
+            </header>
+            <article class="meat-card" data-category="steak">
+                <img src="./assets/image-ribeye.jpg" alt="Ribeye steak"/>
+                <div class="meat-info">
+                    <h3>Ribeye Steak</h3>
+                    <p>Juicy and tender ribeye steak, perfect for grilling.</p>
+                    <span>$25.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </article>
+            <article class="meat-card" data-category="wagyu">
+                <img src="./assets/image-wagyu.png" alt="Wagyu beef"/>
+                <div class="meat-info">
+                    <h3>Wagyu Beef</h3>
+                    <p>Premium Wagyu beef with exceptional marbling and flavor.</p>
+                    <span>$50.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </article>
+            <article class="meat-card" data-category="ribs">
+                <img src="./assets/image-ribs.jpg" alt="Pork Ribs"/>
+                <div class="meat-info">
+                    <h3>Pork Ribs</h3>
+                    <p>Succulent pork ribs, slow-cooked to perfection.</p>
+                    <span>$30.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </article> 
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Premium Cuts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
